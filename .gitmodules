@@ -1,0 +1,6 @@
+[submodule "skills/skillopt"]
+	path = skills/skillopt
+	url = https://github.com/magnus919/hermes-SkillOpt.git
+[submodule "skills/historical-bayesian-html-briefing"]
+	path = skills/historical-bayesian-html-briefing
+	url = https://github.com/H-Ali13381/historical-bayesian-html-briefing.git
