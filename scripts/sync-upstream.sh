@@ -47,7 +47,8 @@ for dir in "${!UPSTREAM[@]}"; do
 
   # Sync: delete old files, copy new ones
   # This ensures deleted upstream files are also removed from our repo
-  rsync -a --delete "$tmpdir/" "$target/"
+  # --exclude=.agents skips the cross-client mirror (duplicate files)
+  rsync -a --delete --exclude=.agents "$tmpdir/" "$target/"
 
   rm -rf "$tmpdir"
   echo "  ✓ Updated"

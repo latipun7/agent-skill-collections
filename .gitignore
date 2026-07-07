@@ -1,0 +1,3 @@
+# Exclude cross-client mirror directories from upstream repos
+# Contents are duplicates of the skill root files
+.agents
